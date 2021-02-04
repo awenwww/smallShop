@@ -36,9 +36,9 @@ public class ProductServletBefore extends BaseServlet {
 			request.setAttribute("pageBean", pageBean);
 			request.setAttribute("cid", cid);
 
-			//����û�Я��������cookie���������¼��
+			//获得用户携带过来的cookie关于浏览记录的
 			Cookie[] cookies = request.getCookies();
-			//����һ��������������Ʒ����
+			//创建一个集合用来放商品集合
 			List<Product> historyPro=new ArrayList<Product>();
 
 			if(cookies!=null){
@@ -52,7 +52,7 @@ public class ProductServletBefore extends BaseServlet {
 					}
 				}
 			}
-			//�������¼����Ϣ��ŵ�request��
+			//将浏览记录的信息存放到request中
 			request.setAttribute("historyPro", historyPro);
 
 
@@ -82,32 +82,32 @@ public class ProductServletBefore extends BaseServlet {
 			request.setAttribute("productInfo", productInfo);
 			request.setAttribute("cid", cid);
 			request.setAttribute("currentPage", currentPage);
-			//��ȡ�ͻ��˴�������coockies�Ƿ����pids
+			////获取客户端传过来的coockies是否包含pids
 			String pids=pid;
 			Cookie[] cookies = request.getCookies();
 			if(cookies!=null){
 				for (Cookie cookie : cookies) {
 					if("pids".equals(cookie.getName())){
-						//����û���������pidscook��ֵ
+						//获得用户传过来的pidscook的值
 						pids=cookie.getValue();
-						//1-3-2 ���η��ʵ���8-----��8-1-3-2
-						//1-3-2 ���η��ʵ���2-----��2-1-3
-						//1-3-2 ���η��ʵ���3-----��3-1-2
+						//1-3-2 本次访问的是8-----》8-1-3-2
+						//1-3-2 本次访问的是2-----》2-1-3
+						//1-3-2 本次访问的是3-----》3-1-2
 						String[] split = pids.split("-");
 //						for (String str : split) {
 //							System.out.println(str);
 //						}
 						List<String> asList = Arrays.asList(split);
 						LinkedList<String> linkedList=new LinkedList<String>(asList);
-						//�жϱ��η��ʵ�pid�Ƿ��������ǰ�ķ��ʼ�¼��
+						//判断本次访问的pid是否包含在以前的访问记录中
 						if(linkedList.contains(pid)){
-							//��������Ļ�����ɾ��
+							//如果包含的话把它删除
 							linkedList.remove(pid);
 						}
-						//�ѷ��ʵ�pid����ͷ��
+						//把访问的pid加在头部
 						linkedList.addFirst(pid);
 
-						//Ȼ���linkedList�ڻ�ԭ����ǰ��1-2-3��ģʽ
+						//然后把linkedList在还原成以前的1-2-3的模式
 						StringBuffer sb=new StringBuffer();
 						for(int i=0;i<linkedList.size()&&i<7;i++){
 							sb.append(linkedList.get(i));
@@ -115,7 +115,7 @@ public class ProductServletBefore extends BaseServlet {
 							sb.append("-");
 						}
 //						System.out.println(sb);
-						//�õ�����1-2-3- ȥ�������-
+						//得到的是1-2-3- 去掉后面的-
 						pids=sb.substring(0, sb.length()-1);
 //						System.out.println(pids);
 					}
