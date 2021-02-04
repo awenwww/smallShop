@@ -14,6 +14,7 @@ public interface ProductDao {
 	List<Product> findHotsProduct() throws SQLException;
 	//根据商品类别查找商品分页显示
 	PageBean<Product> findByCategoryProduct(String cid, int index, int currentCount) throws SQLException;
+
 	//查询这个类别的所有商品总数
 	int findByCategoryCount(String cid) throws SQLException;
 	//根据商品类别查找商品分页显示

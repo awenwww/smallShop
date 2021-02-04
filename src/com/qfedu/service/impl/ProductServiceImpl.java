@@ -26,7 +26,6 @@ public class ProductServiceImpl implements ProductService {
 
         return dao.findHotsProduct();
     }
-
     @Override
     public PageBean<Product> findByCategoryProduct(String cid, String currentPage) throws SQLException {
         // TODO Auto-generated method stub
@@ -41,7 +40,6 @@ public class ProductServiceImpl implements ProductService {
         }else{
             currentpage=Integer.parseInt(currentPage);
         }
-
         //得到该类商品的查询总数
         int count=dao.findByCategoryCount(cid);
         //得到显示的总页数
@@ -67,7 +65,6 @@ public class ProductServiceImpl implements ProductService {
 
         return pro;
     }
-
     @Override
     public List<Map<String, Object>> findItemsByOid(String oid) throws SQLException {
         // TODO Auto-generated method stub

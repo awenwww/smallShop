@@ -7,22 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff05a301-c986-4f0c-8536-12e0bbe8b17c" name="Default Changelist" comment="前台登录">
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/dao/impl/OrderDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/test/OrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/utils/BaseDao1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/qfedu/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/qfedu/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/entity/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/controller/TTT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/dao/ExamplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/service/ExamplyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/utils/BaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/utils/BaseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/utils/C3p0JdbcUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/utils/PageUtil.class" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +46,110 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/UserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-112">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1172">
+              <caret line="132" column="5" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1416#1425#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/CategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/impl/CategoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1792">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,6 +160,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -63,8 +199,82 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1515" />
+    <option name="height" value="1035" />
+  </component>
   <component name="ProjectId" id="1nzuPrfA1hFjdcpsCxGSv2xlrcl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -84,10 +294,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.qfedu.test" />
-      <recent name="com.qfedu.controller" />
       <recent name="com.qfedu.service.impl" />
       <recent name="com.qfedu.service" />
+      <recent name="com.qfedu.controller" />
+      <recent name="com.qfedu.test" />
       <recent name="com.qfedu.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -97,6 +307,18 @@
       <recent name="Z:\IdeaWorkspaces\smallShop\src\com\qfedu\dao\impl" />
       <recent name="Z:\IdeaWorkspaces\smallShop\src\com\qfedu\dao" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.OrderTest">
     <configuration name="OrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -198,8 +420,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.TTT" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.47" />
       <item itemvalue="Application.OrderTest" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.47" />
     </list>
     <recent_temporary>
       <list>
@@ -223,6 +445,7 @@
       <workItem from="1612349536140" duration="263000" />
       <workItem from="1612403691486" duration="272000" />
       <workItem from="1612405220874" duration="609000" />
+      <workItem from="1612423663001" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="组长第一次提交项目架子">
       <created>1612322984912</created>
@@ -254,6 +477,46 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1080000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="-3" width="1542" height="830" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19436997" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -295,5 +558,108 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1612405266090" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/ExampServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-364">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1792">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1172">
+          <caret line="132" column="5" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1416#1425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -35,14 +35,15 @@ public class ProductDaoImpl implements ProductDao{
 		List<Product> hotProducts = runner.query(sql, new BeanListHandler<Product>(Product.class),1,0,9);
 		return hotProducts;
 	}
+
 	@Override
 	public PageBean<Product> findByCategoryProduct(String cid, int index, int currentCount) throws SQLException {
 		// TODO Auto-generated method stub
-		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-		PageBean<Product> pageBean = new PageBean<>();
-		String sql = "SELECT * FROM product WHERE cid=? LIMIT ?,?";
+		QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+		PageBean<Product> pageBean=new PageBean<>();
+		String sql="SELECT * FROM product WHERE cid=? LIMIT ?,?";
 		List<Product> hotProducts
-				= runner.query(sql, new BeanListHandler<Product>(Product.class), cid, index, currentCount);
+				= runner.query(sql, new BeanListHandler<Product>(Product.class),cid,index,currentCount);
 		pageBean.setList(hotProducts);
 		return pageBean;
 	}
@@ -50,19 +51,19 @@ public class ProductDaoImpl implements ProductDao{
 	@Override
 	public int findByCategoryCount(String cid) throws SQLException {
 		// TODO Auto-generated method stub
-		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-		String sql = "SELECT COUNT(*) FROM product WHERE cid=?";
-		Long count = (Long) runner.query(sql, new ScalarHandler(), cid);
+		QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+		String sql="SELECT COUNT(*) FROM product WHERE cid=?";
+		Long count=(Long) runner.query(sql, new ScalarHandler(),cid);
 		return count.intValue();
 	}
 
 	@Override
 	public Product findProInfoById(String pid) throws SQLException {
 		// TODO Auto-generated method stub
-		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+		QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
 
-		String sql = "SELECT * FROM product WHERE pid=?";
-		Product pro = runner.query(sql, new BeanHandler<Product>(Product.class), pid);
+		String sql="SELECT * FROM product WHERE pid=?";
+		Product pro= runner.query(sql, new BeanHandler<Product>(Product.class),pid);
 
 		return pro;
 	}
@@ -70,13 +71,10 @@ public class ProductDaoImpl implements ProductDao{
 	@Override
 	public List<Map<String, Object>> findItemsByOid(String oid) throws SQLException {
 		// TODO Auto-generated method stub
-		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-		String sql = "SELECT p.`pimage`,p.`pname`,p.`shop_price`,o.`count`,o.`subtotal` "
+		QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+		String sql="SELECT p.`pimage`,p.`pname`,p.`shop_price`,o.`count`,o.`subtotal` "
 				+ "FROM orderitem o,product p WHERE o.`pid`=p.`pid` AND o.`oid`=?";
 
-		return runner.query(sql, new MapListHandler(), oid);
+		return runner.query(sql, new MapListHandler(),oid);
 	}
-
-	
-
 }
