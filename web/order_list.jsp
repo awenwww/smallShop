@@ -37,12 +37,12 @@ body {
 			<div style="margin: 0 auto; margin-top: 10px; width: 950px;">
 				<strong>我的订单</strong>
 				<table class="table table-bordered">
-					<c:forEach items="${myOrders }" var="order">
+					<c:forEach items="${myOrders}" var="orderItem">
 					
 					
 					<tbody>
 						<tr class="success">
-							<th colspan="5">订单编号:${order.oid}</th>
+							<th colspan="5">订单编号:${orderItem.order.oid}</th>
 						</tr>
 						<tr class="warning">
 							<th>图片</th>
@@ -51,18 +51,16 @@ body {
 							<th>数量</th>
 							<th>小计</th>
 						</tr>
-						<c:forEach items="${order.orderItem }" var="item">
 						
 							<tr class="active">
 								<td width="60" width="40%"><input type="hidden" name="id"
-									value="22"> <img src="${pageContext.request.contextPath}/${item.product.pimage}" width="70"
+									value="22"> <img src="${pageContext.request.contextPath}/${orderItem.product.pimage}" width="70"
 									height="60"></td>
-								<td width="30%"><a target="_blank"> ${item.product.pname}</a></td>
-								<td width="20%">￥${item.product.shop_price}</td>
-								<td width="10%">${item.count}</td>
-								<td width="15%"><span class="subtotal">￥${item.subtotal}</span></td>
+								<td width="30%"><a target="_blank"> ${orderItem.product.pname}</a></td>
+								<td width="20%">￥${orderItem.product.shop_price}</td>
+								<td width="10%">${orderItem.count}</td>
+								<td width="15%"><span class="subtotal">￥${orderItem.subtotal}</span></td>
 							</tr>
-						</c:forEach>
 					</tbody>
 					
 					</c:forEach>
