@@ -31,7 +31,7 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 	public Product(String pid, String pname, Double market_price, Double shop_price, String pimage, Date pdate,
-			int is_hot, String pdesc, int pflag, com.itheima.domain.Category category) {
+			int is_hot, String pdesc, int pflag, com.qfedu.entity.Category category) {
 		super();
 		this.pid = pid;
 		this.pname = pname;

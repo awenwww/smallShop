@@ -90,5 +90,18 @@ public class Order {
 		this.user = user;
 	}
 
-
+	@Override
+	public String toString() {
+		return "Order{" +
+				"oid='" + oid + '\'' +
+				", ordertime=" + ordertime +
+				", total=" + total +
+				", state=" + state +
+				", address='" + address + '\'' +
+				", name='" + name + '\'' +
+				", telephone='" + telephone + '\'' +
+				", user=" + user +
+				", orderItem=" + orderItem +
+				'}';
+	}
 }
