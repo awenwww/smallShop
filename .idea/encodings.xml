@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qfedu/controller/ProductServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qfedu/dao/AdminDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qfedu/dao/impl/AdminDaoImpl.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qfedu/service/CategoryService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qfedu/service/impl/CategoryServiceImpl.java" charset="GBK" />
   </component>
