@@ -41,12 +41,12 @@ body {
 		</div>
 		<c:forEach items="${pageBean.list}" var="pro">
 			<div class="col-md-2">
-				<a href="${pageContext.request.contextPath}/ProductServlet?method=findProInfoById&pid=${pro.pid }&cid=${cid}&currentPage=${pageBean.currentPage}"> 
+				<a href="${pageContext.request.contextPath}/ProductServletBefore?method=findProInfoById&pid=${pro.pid }&cid=${cid}&currentPage=${pageBean.currentPage}">
 				<img src="${pageContext.request.contextPath }/${pro.pimage }"
 					width="170" height="170" style="display: inline-block;">
 				</a>
 				<p>
-					<a href="product_info.html" style='color: green'>${pro.pname}</a>
+					<a href="product_info.jsp" style='color: green'>${pro.pname}</a>
 				</p>
 				<p>
 					<font color="#FF0000">商城价：&yen;${pro.shop_price}</font>
@@ -65,7 +65,7 @@ body {
 					aria-hidden="true">&laquo;</span></a></li>
 			</c:if>
 			<c:if test="${pageBean.currentPage>1 }">
-			<li><a href="${pageContext.request.contextPath}/ProductServlet?method=prByCategory&cid=${cid}&currentPage=${pageBean.currentPage-1}" aria-label="Previous"><span
+			<li><a href="${pageContext.request.contextPath}/ProductServletBefore?method=prByCategory&cid=${cid}&currentPage=${pageBean.currentPage-1}" aria-label="Previous"><span
 					aria-hidden="true">&laquo;</span></a></li>
 			</c:if>
 			
@@ -73,10 +73,10 @@ body {
 			<!-- <li class="active"><a href="#">1</a></li> -->
 			<c:forEach var="pageNum" begin="1" end="${pageBean.totalPage }">
 				<c:if test="${pageNum==pageBean.currentPage }">
-				<li class="active"><a href="${pageContext.request.contextPath}/ProductServlet?method=prByCategory&cid=${cid}&currentPage=${pageNum}">${pageNum}</a></li>
+				<li class="active"><a href="${pageContext.request.contextPath}/ProductServletBefore?method=prByCategory&cid=${cid}&currentPage=${pageNum}">${pageNum}</a></li>
 				</c:if>
 				<c:if test="${pageNum!=pageBean.currentPage }">
-				<li><a href="${pageContext.request.contextPath}/ProductServlet?method=prByCategory&cid=${cid}&currentPage=${pageNum}">${pageNum}</a></li>
+				<li><a href="${pageContext.request.contextPath}/ProductServletBefore?method=prByCategory&cid=${cid}&currentPage=${pageNum}">${pageNum}</a></li>
 				</c:if>
 				
 			</c:forEach>
@@ -86,7 +86,7 @@ body {
 				</a></li>
 			</c:if>
 			<c:if test="${pageBean.currentPage<pageBean.totalPage }">
-				<li><a href="${pageContext.request.contextPath}/ProductServlet?method=prByCategory&cid=${cid}&currentPage=${pageBean.currentPage+1}" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+				<li><a href="${pageContext.request.contextPath}/ProductServletBefore?method=prByCategory&cid=${cid}&currentPage=${pageBean.currentPage+1}" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
 				</a></li>
 			</c:if>
 		</ul>

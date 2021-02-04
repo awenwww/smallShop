@@ -54,11 +54,11 @@
 $(function(){
 	
 	$.post(
-		"${pageContext.request.contextPath}/CategoryServlet",
+		"${pageContext.request.contextPath}/CategoryServletBefore",
 		function(data){
 			var content="";
 		     for(var i=0;i<data.length;i++){
-		    	content+="<li><a href='${pageContext.request.contextPath}/ProductServlet?method=prByCategory&cid="+data[i].cid+"'>"+data[i].cname+"</a></li>";
+		    	content+="<li><a href='${pageContext.request.contextPath}/ProductServletBefore?method=prByCategory&cid="+data[i].cid+"'>"+data[i].cname+"</a></li>";
 		     }
 		     $("#category").html(content);
 		},
