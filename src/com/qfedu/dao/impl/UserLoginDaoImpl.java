@@ -31,4 +31,38 @@ public class UserLoginDaoImpl extends BaseDao implements UserLoginDao {
         }
         return null;
     }
+    @Override
+    public int register(User user) {
+        String sql = "insert into user values(?,?,?,?,?,?,?,?,?,?)";
+        Object[] params={user.getUid(),user.getUsername(),user.getPassword(),user.getName(),user.getEmail(),user.getTelephone(),user.getBirthday(),user.getSex(),user.getState(),user.getCode()};
+        try {
+            return  super.update(sql,params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  0;
+    }
+
+    @Override
+    public User checkUser(String username) {
+        String sql="select * from user where username=?";
+        Object [] part = {username};
+        try {
+            List<User> query = super.query(sql, part, User.class);
+            if(query!=null){
+                return query.get(0);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

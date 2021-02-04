@@ -8,10 +8,21 @@ import com.qfedu.service.UserLoginService;
 import java.util.List;
 
 public class UserLoginServiceImpl implements UserLoginService {
+    UserLoginDao userLoginDao = new UserLoginDaoImpl();
     @Override
     public List<User> login(User user) {
-        UserLoginDao userLoginDao = new UserLoginDaoImpl();
         List<User> login = userLoginDao.login(user);
         return login;
+    }
+    @Override
+    public int register(User user) {
+        int register = userLoginDao.register(user);
+        return register;
+    }
+
+    @Override
+    public User checkUser(String username) {
+        User user = userLoginDao.checkUser(username);
+        return user;
     }
 }
