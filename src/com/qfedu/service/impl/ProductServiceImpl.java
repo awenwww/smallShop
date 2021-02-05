@@ -104,4 +104,10 @@ public class ProductServiceImpl implements ProductService {
         ProductDao dao=new ProductDaoImpl();
         dao.delete(id);
     }
+
+    @Override
+    public void addPro(Product p) throws SQLException {
+        ProductDao dao=new ProductDaoImpl();
+        dao.addPro(p);
+    }
 }

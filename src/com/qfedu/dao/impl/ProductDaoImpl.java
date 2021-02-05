@@ -160,4 +160,11 @@ public class ProductDaoImpl extends BaseDao implements ProductDao{
 			e.printStackTrace();
 		}
 	}
+
+	@Override
+	public void addPro(Product p) throws SQLException {
+		String sql="insert into product(pid,pname,market_price,is_hot,pdesc,pflag,cid,shop_price) values(?,?,?,?,?,?,?,?)";
+		runner.update(sql,p.getPid(),p.getPname(),p.getMarket_price(),p.getIs_hot(),p.getPdesc(),p.getPflag(),
+				p.getCategory().getCid(),p.getShop_price());
+	}
 }

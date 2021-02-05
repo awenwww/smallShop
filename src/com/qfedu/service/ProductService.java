@@ -30,4 +30,5 @@ public interface ProductService {
     public Product getProductsById(int id);
     //删除
     public void delete(String id);
+    public void addPro(Product p) throws SQLException;
 }

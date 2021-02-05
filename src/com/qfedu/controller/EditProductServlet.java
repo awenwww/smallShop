@@ -4,6 +4,7 @@ import com.qfedu.entity.Category;
 import com.qfedu.entity.Product;
 import com.qfedu.service.ProductService;
 import com.qfedu.service.impl.ProductServiceImpl;
+import com.qfedu.utils.UUIDUtils;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.Converter;
@@ -35,7 +36,6 @@ public class EditProductServlet extends HttpServlet {
         System.out.println(pid);
         Product product=new Product();
         product.setPname(request.getParameter("pname"));
-        product.setPid(request.getParameter("pid"));
         product.setMarket_price(Double.parseDouble(request.getParameter("market_price")));
         product.setIs_hot(Integer.parseInt(request.getParameter("is_hot")));
         product.setPdesc(request.getParameter("pdesc"));
@@ -49,7 +49,13 @@ public class EditProductServlet extends HttpServlet {
             product.setCategory(category);
             System.out.println(product);
             ProductService service=new ProductServiceImpl();
-            service.update(product);
+            if(pid==null || "".equals(pid)){
+                product.setPid(UUIDUtils.getCode());
+                service.addPro(product);
+            }else{
+                product.setPid(pid);
+                service.update(product);
+            }
             response.sendRedirect(request.getContextPath()+"/FuzzySelectProducts");
 
         } catch (SQLException e) {

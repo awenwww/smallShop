@@ -64,6 +64,10 @@
 							<c:if test="${pro.is_hot==0}">
 								<option value="0">否</option>
 							</c:if>
+							<c:if test="${pro==null}">
+								<option value="1" selected>是</option>
+								<option value="0">否</option>
+							</c:if>
 						</select>
 					</td>
 				</tr>
@@ -102,6 +106,7 @@
 								<c:if test="${pro.category.cid!=list.cid}">
 									<option value="${list.cid}">${list.cname}</option>
 								</c:if>
+
 
 							</c:forEach>
 
