@@ -25,7 +25,7 @@ public interface ProductService {
     //查询所有数据的总数
     public int selectDataCount();
     //更新
-    public void update(Object[] parameter);
+    public void update(Product p) throws SQLException;
     //根据id查询
     public Product getProductsById(int id);
     //删除

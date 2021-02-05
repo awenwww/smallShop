@@ -87,9 +87,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void update(Object[] parameter) {
+    public void update(Product p) throws SQLException {
         ProductDao dao=new ProductDaoImpl();
-        dao.update(parameter);
+        dao.update(p);
     }
 
     @Override
