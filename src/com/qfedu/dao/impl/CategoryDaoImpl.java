@@ -60,5 +60,28 @@ public class CategoryDaoImpl extends BaseDao implements CategoryDao {
         return update;
     }
 
+    @Override
+    public List<Category> findAllCategory() {
+        String sql = "select * from category";
+        Object [] objects = {};
+        List<Category> query = null;
+        try {
+            query = super.query(sql, objects, Category.class);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+
+
+        return  query;
+    }
+
 
 }

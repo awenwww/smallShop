@@ -6,16 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff05a301-c986-4f0c-8536-12e0bbe8b17c" name="Default Changelist" comment="工具类">
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/controller/CategoryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/controller/adminCategory_updateaction.java" afterDir="false" />
+    <list default="true" id="ff05a301-c986-4f0c-8536-12e0bbe8b17c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/CategoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/impl/CategoryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/CateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/CateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/impl/CateserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/impl/CateserviceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/category/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/category/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/category/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/category/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,11 +234,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -268,6 +257,7 @@
       <workItem from="1612403691486" duration="272000" />
       <workItem from="1612405220874" duration="609000" />
       <workItem from="1612430794363" duration="3194000" />
+      <workItem from="1612488626257" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="组长第一次提交项目架子">
       <created>1612322984912</created>
@@ -311,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612421386164</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成查询和修改">
+      <created>1612488756617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612488756617</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完成查询和修改">
+      <created>1612489195433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612489195433</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,22 +329,23 @@
     <MESSAGE value="前台登录" />
     <MESSAGE value="whs" />
     <MESSAGE value="解决商品类型地址错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决商品类型地址错误" />
+    <MESSAGE value="完成查询和修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成查询和修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="490" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1612426777093">
+    <state x="490" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1612490107967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1612405795082" />
-    <state x="490" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1612426777093" />
+    <state x="490" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1612490107967" />
     <state x="250" y="124" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1612405263213">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="250" y="124" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1366.738@0.0.1366.738" timestamp="1612405263213" />
-    <state x="385" y="6" key="CommitChangelistDialog2" timestamp="1612421376251">
+    <state x="385" y="6" key="CommitChangelistDialog2" timestamp="1612489194435">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612421376251" />
+    <state x="385" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612489194435" />
     <state x="300" y="170" key="FileChooserDialogImpl" timestamp="1612432946614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -397,6 +402,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1247" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1612433992169" />
+    <state x="477" y="129" key="MultipleFileMergeDialog" timestamp="1612488833753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="129" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1612488833753" />
     <state x="563" y="137" key="RollbackChangesDialog" timestamp="1612418540978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -406,9 +415,13 @@
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1612405266090" />
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612418181499" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612421399230">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612489210391">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612421399230" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612489210391" />
+    <state x="473" y="214" key="git4idea.merge.GitPullDialog" timestamp="1612490245100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1612490245100" />
   </component>
 </project>
