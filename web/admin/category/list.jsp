@@ -66,7 +66,7 @@
 								</a></td>
 
 								<td align="center" style="HEIGHT: 22px"><a
-										href="">
+										href="${pageContext.request.contextPath}/deletecategoryServlet?cid=${Category.cid}">
 									<img src="${pageContext.request.contextPath}/images/i_del.gif"
 										 width="16" height="16" border="0" style="CURSOR: hand">
 								</a></td>

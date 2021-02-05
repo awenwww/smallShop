@@ -9,4 +9,6 @@ public interface CategoryDao {
     public int cateCount();
     public int updateById(String id,String name);
     public List<Category> findAllCategory();
+    public int addCategory(int id ,String string);
+    public void deleteByid(String cid);
 }
