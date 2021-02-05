@@ -40,7 +40,7 @@ public class UserServlet extends HttpServlet {
                 session.setAttribute("user",login.get(0));
                 response.sendRedirect("index.jsp");
             }else{
-                response.sendRedirect("index1.jsp");
+                response.sendRedirect("login.jsp");
             }
         }else if(methodName.equals("userRegist")){
             Map<String, String[]> map = request.getParameterMap();
