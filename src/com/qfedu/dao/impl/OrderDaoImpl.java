@@ -5,10 +5,16 @@ import com.qfedu.entity.Order;
 import com.qfedu.entity.OrderItem;
 import com.qfedu.entity.Product;
 import com.qfedu.utils.BaseDao1;
+import com.qfedu.utils.DataSourceUtils;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.MapListHandler;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class OrderDaoImpl extends BaseDao1 implements OrderDao {
     @Override
@@ -36,5 +42,21 @@ public class OrderDaoImpl extends BaseDao1 implements OrderDao {
             e.printStackTrace();
         }
         return orderItems;
+    }
+    //后台订单
+    @Override
+    public List<Order> findAllOrders() throws SQLException {
+        // TODO Auto-generated method stub
+        QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+        String sql = "select * from orders";
+        return runner.query(sql, new BeanListHandler<Order>(Order.class));
+    }
+
+    @Override
+    public List<Map<String, Object>> findItemByOid(String oid) throws SQLException {
+        // TODO Auto-generated method stub
+        QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+        String sql = "SELECT p.`pimage`,p.`pname`,p.`shop_price`,o.`count`,o.`subtotal` FROM orderitem o,product p WHERE o.`pid`=p.`pid` AND o.`oid`=?";
+        return runner.query(sql, new MapListHandler(),oid);
     }
 }

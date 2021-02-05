@@ -29,7 +29,7 @@
 		d.add('0104','01','商品管理');
 		d.add('010401','0104','商品管理','${pageContext.request.contextPath}/admin/product/list.jsp','','mainFrame');
 		d.add('0106','01','订单管理');
-		d.add('010601','0106','订单管理','${pageContext.request.contextPath}/AdminServlet?method=findAllOrders','','mainFrame');
+		d.add('010601','0106','订单管理','${pageContext.request.contextPath}/OrderServletAfter?method=findAllOrders','','mainFrame');
 		document.write(d);
 		
 	</script>
