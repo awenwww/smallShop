@@ -12,4 +12,6 @@ public interface OrderDao {
     //订单
     List<Order> findAllOrders()throws SQLException;
     List<Map<String, Object>> findItemByOid(String oid)throws SQLException;
+    void updateOrder(Order order) throws SQLException;
+    void updateOrderState(String oid,int i) throws SQLException;
 }

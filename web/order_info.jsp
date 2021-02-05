@@ -73,7 +73,7 @@ body {
 
 		<div>
 			<hr />
-			<form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/ProductServlet?method=updateOrder"
+			<form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/SubmitAgainOrderServlet"
 				id="updateOrder"	style="margin-top: 5px; margin-left: 150px;">
 				<div class="form-group">
 					<label for="username" class="col-sm-1 control-label">收货人</label>

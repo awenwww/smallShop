@@ -27,7 +27,7 @@ body {
 	function addCart(){
 		
 	var buyNum=$("#buyNum").val();
-	location.href="${pageContext.request.contextPath}/ProductServlet?method=addProToCart&pid=${productInfo.pid}&buyNum="+buyNum;
+	location.href="${pageContext.request.contextPath}/addProToCartServlet?pid=${productInfo.pid}&buyNum="+buyNum;
 	}
 
 </script>

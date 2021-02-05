@@ -8,7 +8,7 @@ public class BaseDao1 {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8&useSSL=true", "root", "root");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8&useSSL=true", "root", "123456");
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

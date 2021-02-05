@@ -32,4 +32,16 @@ public class OrderServiceImpl implements OrderService {
 
         return orderDao.findItemByOid(oid);
     }
+    @Override
+    public void updateOrder(Order order) throws SQLException {
+        // TODO Auto-generated method stub
+        OrderDaoImpl orderDao = new OrderDaoImpl();
+        orderDao.updateOrder(order);
+    }
+
+    @Override
+    public void updateOrderState(String oid, int i) throws SQLException {
+        OrderDaoImpl orderDao = new OrderDaoImpl();
+        orderDao.updateOrderState(oid,i);
+    }
 }
