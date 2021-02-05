@@ -29,6 +29,19 @@ public class CategoryDaoImpl extends BaseDao implements CategoryDao {
         }
         return null;
     }
+    @Override
+    public List<Category> getall(int pageNo, int pageSize, String str) {
+        String sql = "select * from category limit ?,?";
+        Object [] objects = {(pageNo-1) * pageSize , pageSize};
+        List<Category> query = null;
+        try {
+            query = super.query(sql, objects, Category.class);
+            return query;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     @Override
     public int cateCount() {
@@ -100,6 +113,17 @@ public class CategoryDaoImpl extends BaseDao implements CategoryDao {
             e.printStackTrace();
         }
 
+    }
+
+
+    @Override
+    public int typeCount() {
+        return 0;
+    }
+
+    @Override
+    public int addType(String typename) {
+        return 0;
     }
 
 

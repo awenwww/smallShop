@@ -1,4 +1,5 @@
 package com.qfedu.service;
 
-public class ExamplyService {
+public class ExamplyService{
+
 }

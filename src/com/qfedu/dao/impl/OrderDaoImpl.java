@@ -59,4 +59,16 @@ public class OrderDaoImpl extends BaseDao1 implements OrderDao {
         String sql = "SELECT p.`pimage`,p.`pname`,p.`shop_price`,o.`count`,o.`subtotal` FROM orderitem o,product p WHERE o.`pid`=p.`pid` AND o.`oid`=?";
         return runner.query(sql, new MapListHandler(),oid);
     }
+    @Override
+    public void updateOrder(Order order) throws SQLException {
+        QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+        String sql="update orders set address=?,name=?,telephone=? WHERE oid=?";
+        runner.update(sql,order.getAddress(),order.getName(),order.getTelephone(),order.getOid());
+    }
+    @Override
+    public void updateOrderState(String oid,int i) throws SQLException {
+        QueryRunner runner=new QueryRunner(DataSourceUtils.getDataSource());
+        String sql="update orders set state=? where oid=? ";
+        runner.update(sql,i,oid);
+    }
 }

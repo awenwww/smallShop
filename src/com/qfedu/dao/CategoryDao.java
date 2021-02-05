@@ -12,4 +12,7 @@ public interface CategoryDao {
     public List<Category> findAllCategory() throws SQLException;
     public int addCategory(int id ,String string);
     public void deleteByid(String cid);
+    public List<Category> getall(int pageNo , int pageSize , String str);
+    public int typeCount();
+    public int addType(String typename);
 }

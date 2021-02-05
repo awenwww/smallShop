@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>黑马商城购物车</title>
+		<title>猿计划购物车</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
@@ -32,13 +32,13 @@
 		<script type="text/javascript">
 			function delProFromCart(pid){
 				if(confirm("是否要删除该商品？")){
-					location.href="${pageContext.request.contextPath}/ProductServlet?method=delProFromCart&pid="+pid;
+					location.href="${pageContext.request.contextPath}/DelProFromCartServlet?pid="+pid;
 				}
 				
 			}
 			function clearCart(pid){
-				if(confirm("是否要删除该商品？")){
-					location.href="${pageContext.request.contextPath}/ProductServlet?method=clearCart";
+				if(confirm("是否要清空这些商品？")){
+					location.href="${pageContext.request.contextPath}/ClearCartServlet";
 				}
 				
 			}
@@ -106,7 +106,7 @@
 				</div>
 				<div style="text-align:right;margin-top:10px;margin-bottom:10px;">
 					<a href="javascript:void(0)" onclick="clearCart()" id="clear" class="clear">清空购物车</a>
-					<a href="${pageContext.request.contextPath}/ProductServlet?method=submitOrder">
+					<a href="${pageContext.request.contextPath}/SubmitOrderServlet">
 						<input type="submit" width="100" value="提交订单" name="submit" border="0" style="background: url('./images/register.gif') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 						height:35px;width:100px;color:white;">
 					</a>
