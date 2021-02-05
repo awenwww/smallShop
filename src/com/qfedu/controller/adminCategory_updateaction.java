@@ -25,6 +25,6 @@ public class adminCategory_updateaction extends HttpServlet {
         System.out.println(cid);
         CateService cateservice = new CateserviceImpl();
         int i = cateservice.updateById(cid, cname);
-       // response.sendRedirect(request.getContextPath() +"/CategoryServlet?pageNo=1");
+        response.sendRedirect(request.getContextPath() +"/CategoryServlet?pageNo=1");
     }
 }
