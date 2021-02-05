@@ -22,13 +22,20 @@ public class CateserviceImpl implements CateService {
     }
 
     @Override
-    public int addType(String typename) {
-        return 0;
+    public int addcategory(int id ,String typename) {
+
+        int i = categoryDao.addCategory(id, typename);
+        return i;
     }
 
     @Override
     public int updateById(String id, String name) {
         int i = categoryDao.updateById(id, name);
         return i;
+    }
+
+    @Override
+    public void deleteByid(String cid) {
+        categoryDao.deleteByid(cid);
     }
 }
