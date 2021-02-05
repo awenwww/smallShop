@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" pageEncoding="UTF-8"%>
 <HTML>
 <HEAD>
@@ -5,6 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="${pageContext.request.contextPath}/css/Style1.css"
 	rel="stylesheet" type="text/css" />
+	<%
+		String path = request.getContextPath();
+	%>
 <script language="javascript"
 	src="${pageContext.request.contextPath}/js/public.js"></script>
 <script type="text/javascript">
@@ -43,30 +47,80 @@
 							<td width="7%" align="center">编辑</td>
 							<td width="7%" align="center">删除</td>
 						</tr>
-							<tr onmouseover="this.style.backgroundColor = 'white'"
-								onmouseout="this.style.backgroundColor = '#F5FAFE';">
-								<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-									width="18%">1</td>
-								<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-									width="17%">手机数码</td>
+<%--							<tr onmouseover="this.style.backgroundColor = 'white'"--%>
+<%--								onmouseout="this.style.backgroundColor = '#F5FAFE';">--%>
+<%--								<td style="CURSOR: hand; HEIGHT: 22px" align="center"--%>
+<%--									width="18%">1</td>--%>
+<%--								<td style="CURSOR: hand; HEIGHT: 22px" align="center"--%>
+<%--									width="17%">手机数码</td>--%>
+
+						<c:forEach items="${list}" var="Category" >
+							<tr>
+								<td>${Category.cid}</td>
+								<td>${Category.cname}</td>
+
 								<td align="center" style="HEIGHT: 22px"><a
-									href="${ pageContext.request.contextPath }/admin/category/edit.jsp">
-										<img
-										src="${pageContext.request.contextPath}/images/i_edit.gif"
-										border="0" style="CURSOR: hand">
+										href="${pageContext.request.contextPath }/admin/category/edit.jsp?cid=${Category.cid}&cname=${Category.cname}">
+									<img src="${pageContext.request.contextPath}/images/i_edit.gif"
+											border="0" style="CURSOR: hand">
 								</a></td>
 
 								<td align="center" style="HEIGHT: 22px"><a
-									href="">
-										<img src="${pageContext.request.contextPath}/images/i_del.gif"
-										width="16" height="16" border="0" style="CURSOR: hand">
+										href="">
+									<img src="${pageContext.request.contextPath}/images/i_del.gif"
+										 width="16" height="16" border="0" style="CURSOR: hand">
 								</a></td>
 							</tr>
+							</tr>
+						</c:forEach>
 					</table>
 				</td>
 			</tr>
-		</TBODY>
+	</TBODY>
 	</table>
+	<%
+		Object objNo = request.getAttribute("pageNo");
+		Object objCount = request.getAttribute("pageCount");
+		int pageNo = 0;
+		int pageCount = 0;
+		if (objNo != null) {
+			pageNo = Integer.parseInt(objNo.toString());
+		}
+		if (objCount != null) {
+			pageCount = Integer.parseInt(objCount.toString());
+		}
+
+	%>
+	<tr>
+		<td colspan="4">
+			<a href="${pageContext.request.contextPath}/CategoryServlet?pageNo=1">首页</a>
+			<%
+				if (pageNo > 1) {
+			%>
+			<a href="${pageContext.request.contextPath}/CategoryServlet?pageNo=${pageNo-1}">上一页</a>
+			<%
+				}
+				if (pageNo == 1) {
+			%>
+			<a href="#">上一页</a>
+			<%
+				}
+			%>
+			<%
+				if(pageCount > pageNo) {
+			%>
+			<a href="${pageContext.request.contextPath}/CategoryServlet?pageNo=${pageNo+1}">下一页</a>
+			<%
+				}
+				if (pageCount == pageNo) {
+			%>
+			<a href="#">下一页</a>
+			<%
+				}
+			%>
+			<a href="${pageContext.request.contextPath}/CategoryServlet?pageNo=${pageCount}">尾页</a>
+		</td>
+	</tr>
 </body>
 </HTML>
 
