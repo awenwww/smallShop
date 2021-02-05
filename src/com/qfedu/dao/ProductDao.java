@@ -20,4 +20,16 @@ public interface ProductDao {
 	//根据商品类别查找商品分页显示
 	Product findProInfoById(String pid) throws SQLException;
 	List<Map<String, Object>> findItemsByOid(String oid) throws SQLException;
+
+	//后台商品管理
+	//分页查询所有数据
+	public List<Product> selectAll(int pageNo, int pageSize);
+	//查询所有数据的总数
+	public int selectDataCount();
+	//更新
+	public void update(Object[] parameter);
+	//根据id查询
+	public Product getProductsById(int id);
+	//删除
+	public void delete(String id);
 }

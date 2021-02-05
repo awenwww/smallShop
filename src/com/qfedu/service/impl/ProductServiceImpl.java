@@ -71,4 +71,37 @@ public class ProductServiceImpl implements ProductService {
         ProductDao dao=new ProductDaoImpl();
         return dao.findItemsByOid(oid);
     }
+
+    @Override
+    public List<Product> selectAll(int pageNo, int pageSize) {
+        ProductDao dao=new ProductDaoImpl();
+        List<Product> products = dao.selectAll(pageNo, pageSize);
+        return products;
+    }
+
+    @Override
+    public int selectDataCount() {
+        ProductDao dao=new ProductDaoImpl();
+        int dataCount = dao.selectDataCount();
+        return dataCount;
+    }
+
+    @Override
+    public void update(Object[] parameter) {
+        ProductDao dao=new ProductDaoImpl();
+        dao.update(parameter);
+    }
+
+    @Override
+    public Product getProductsById(int id) {
+        ProductDao dao=new ProductDaoImpl();
+        Product productsById = dao.getProductsById(id);
+        return productsById;
+    }
+
+    @Override
+    public void delete(String id) {
+        ProductDao dao=new ProductDaoImpl();
+        dao.delete(id);
+    }
 }
