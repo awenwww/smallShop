@@ -69,16 +69,16 @@
 				</div>
 				<div class="col-md-10">
 					<div class="col-md-6" style="text-align:center;height:200px;padding:0px;">
-						<a href="product_info.htm">
+						<a href="product_info.jsp">
 							<img src="products/hao/middle01.jpg" width="516px" height="200px" style="display: inline-block;">
 						</a>
 					</div>
 				<c:forEach items="${hotProducts }" var="hots">
 					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
-						<a href="product_info.htm">
+						<a href="product_info.jsp">
 							<img src="${pageContext.request.contextPath}/${hots.pimage}" width="130" height="130" style="display: inline-block;">
 						</a>
-						<p><a href="product_info.html" style='color:#666'>${hots.pname}</a></p>
+						<p><a href="product_info.jsp" style='color:#666'>${hots.pname}</a></p>
 						<p><font color="#E4393C" style="font-size:16px">&yen;${hots.shop_price}</font></p>
 					</div>
 				</c:forEach>
@@ -104,16 +104,16 @@
 				</div>
 				<div class="col-md-10">
 					<div class="col-md-6" style="text-align:center;height:200px;padding:0px;">
-						<a href="product_info.htm">
+						<a href="product_info.jsp">
 							<img src="products/hao/middle01.jpg" width="516px" height="200px" style="display: inline-block;">
 						</a>
 					</div>
 				<c:forEach items="${newsProducts }" var="news">
 					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
-						<a href="product_info.htm">
+						<a href="product_info.jsp">
 							<img src="${pageContext.request.contextPath}/${news.pimage}" width="130" height="130" style="display: inline-block;">
 						</a>
-						<p><a href="product_info.html" style='color:#666'>${news.pname}</a></p>
+						<p><a href="product_info.jsp" style='color:#666'>${news.pname}</a></p>
 						<p><font color="#E4393C" style="font-size:16px">&yen;${news.shop_price}</font></p>
 					</div>
 				</c:forEach>
