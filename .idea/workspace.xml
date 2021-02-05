@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff05a301-c986-4f0c-8536-12e0bbe8b17c" name="Default Changelist" comment="柳铁的商品分类和展示">
-      <change afterPath="$PROJECT_DIR$/src/com/qfedu/controller/EditProductServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/shop.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/controller/ExampServlet.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/controller/IndexServlet.class" afterDir="false" />
@@ -37,15 +36,8 @@
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/qfedu/utils/UUIDUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/c3p0-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/dao/impl/ProductDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qfedu/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/shop.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/shop.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/product/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/product/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/product/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/admin/product/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="250">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -627,17 +619,24 @@
       <option name="project" value="LOCAL" />
       <updated>1612495824600</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="周亮  后台商品管理修改功能">
+      <created>1612514502237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612514502238</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18341000" />
+    <option name="totallyTimeSpent" value="18635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6947608" visible="true" weight="0.16577181" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6947608" visible="true" weight="0.16577181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -647,7 +646,7 @@
       <window_info id="Web" order="7" sideWeight="0.30523917" side_tool="true" weight="0.16577181" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1994302" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34615386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25356126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -735,7 +734,8 @@
     <MESSAGE value="whs" />
     <MESSAGE value="解决商品类型地址错误" />
     <MESSAGE value="我的订单模块并入项目成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="我的订单模块并入项目成功" />
+    <MESSAGE value="周亮  后台商品管理修改功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="周亮  后台商品管理修改功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1612426777093">
@@ -1150,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/product/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="250">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
         </state>
       </provider>
     </entry>
